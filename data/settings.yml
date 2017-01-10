@@ -1,0 +1,12 @@
+site_url: 'http://bunnywave.com'
+site_title: 'Training Center Management Platform'
+site_description: 'Cloud-based Training Center Management Solution. Grow your business! Focus on your expertise!'
+site_author: 'Mindhub InnoTech Limited'
+site_author_profile: 'More about Mindhub'
+site_author_image: 'profile.png'
+reverse_title: true
+social_links:
+  twitter: 'https://twitter.com'
+  facebook: 'https://facebook.com'
+  linkedin: 'https://linkedin.com'
+# google_analytics_account: 'XX-12345678-9'

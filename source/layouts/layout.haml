@@ -2,14 +2,18 @@
 %html
   %head
     %meta{:charset => "utf-8"}/
-    %title= current_page.data.title || "Training Center Management System"
-    %meta{:content => "Training Center Management System", :name => "description"}/
+    %title
+      = format_title
+    %meta{:content => "#{page_description}", :name => "description"}/
     %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
     %meta{:content => "MindHub InnoTech Ltd", :name => "generator"}/
+    = favicon_tag '/images/favicon.png'
+    = feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed"
     %link{:href => "//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css", :rel => "stylesheet"}/
     %link{:href => "//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css", :rel => "stylesheet"}/
     %link{:href => "http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css", :rel => "stylesheet"}/
-    = stylesheet_link_tag :site
+    = stylesheet_link_tag :style
+    = partial "layouts/analytics"
   %body.bg-faded
     = partial "layouts/header"
     = yield
