@@ -37,8 +37,19 @@ end
 # Build-specific configuration
 configure :build do
   # Minify CSS on build
-  # activate :minify_css
+  activate :minify_css
 
   # Minify Javascript on build
-  # activate :minify_javascript
+  activate :minify_javascript
+end
+
+activate :rsync do |rsync|
+  rsync.production_server = "eduapp"
+  # rsync.staging_server = "staging.myapp.com"
+  rsync.path = '/var/www/tms/shared/public'
+  rsync.user = "ubuntu"
+
+  # Optional:
+  # rsync.rsync_flags = "--compress --archive --delete -v"
+  rsync.rsync_flags = "--compress --archive -v"
 end
