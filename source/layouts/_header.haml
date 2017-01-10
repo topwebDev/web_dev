@@ -1,0 +1,24 @@
+%header#first
+  .header-content
+    .inner
+      %h1 Automate Your Training Center
+      %h5.wow.fadeIn.text-normal.wow.fadeIn Grow your business. Focus on your expertise!
+      %a.btn.btn-primary-outline.btn-xl.page-scroll.wow.fadeInUp.m-t-3{:href => "#one"} Learn more
+%nav#topNav.navbar.fixed-top.navbar-toggleable-sm
+  .container
+    %button.navbar-toggler.hidden-md-up.float-right{"data-target" => "#collapsingNavbar", "data-toggle" => "collapse", :type => "button"}
+      ☰
+    %a.navbar-brand.page-scroll{:href => "#first"} TMS
+    #collapsingNavbar.collapse.navbar-collapse
+      %ul.navbar-nav
+        %li.nav-item
+          %a.nav-link.page-scroll{:href => "#one"} Features
+        %li.nav-item
+          %a.nav-link.page-scroll{:href => "#two"} Solutions
+        %li.nav-item
+          %a.nav-link.page-scroll{:href => "#three"} Pricing
+        %li.nav-item
+          %a.nav-link.page-scroll{:href => "#four"} More
+      %ul.nav.navbar-nav.ml-auto
+        %li.nav-item
+          %a.nav-link.page-scroll{"data-toggle" => "modal", :href => "#aboutModal", :title => "A free Bootstrap theme"} About
