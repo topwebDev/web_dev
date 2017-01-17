@@ -2,9 +2,8 @@
 %html
   %head
     %meta{:charset => "utf-8"}/
-    %title
-      = format_title
-    %meta{:content => "#{page_description}", :name => "description"}/
+    %title= format_title
+    %meta{:content => page_description, :name => "description"}/
     %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
     %meta{:content => "MindHub InnoTech Ltd", :name => "generator"}/
     = favicon_tag '/images/favicon.png'
@@ -13,11 +12,11 @@
     %link{:href => "//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css", :rel => "stylesheet"}/
     %link{:href => "http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css", :rel => "stylesheet"}/
     = stylesheet_link_tag :style
-    = partial "layouts/analytics"
-  %body.bg-faded
-    = partial "layouts/header"
+    = partial "layouts/analytics.haml"
+  %body
+    = partial "layouts/header.haml"
     = yield
-    = partial "layouts/footer"
+    = partial "layouts/footer.haml"
     %script{:src => "//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"}
     %script{:src => "//cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js"}
     %script{:src => "//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"}

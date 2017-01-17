@@ -1,5 +1,9 @@
 Time.zone = 'UTC'
 
+# Templates
+
+set :haml, { ugly: true, format: :html5 }
+
 page '/feed.xml', layout: false
 page '/sitemap.xml', layout: false
 page '/robots.txt', layout: false
@@ -69,8 +73,10 @@ activate :blog do |blog|
   # This will add a prefix to all links, template references and source paths
   # blog.prefix = "blog"
 
+  blog.layout = 'blog'
+
   # Permalink format
-  blog.permalink = '{year}/{month}/{day}/{title}.html'
+  blog.permalink = 'blog/{year}/{month}/{day}/{title}.html'
   # Matcher for blog source files
   blog.sources = 'posts/{year}-{month}-{day}-{title}.html'
   blog.summary_length = 250
