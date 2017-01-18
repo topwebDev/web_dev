@@ -1,510 +1,309 @@
 ---
 title: Training Center Management System
 ---
-
-%header#first
-  .header-content
-    .inner
-      %h1 Automate Your Training Center
-      %h5.wow.fadeIn.text-normal.wow.fadeIn Grow your business. Focus on your expertise!
-      %a.btn.btn-primary-outline.btn-xl.page-scroll.wow.fadeInUp.m-t-3{:href => "#one"} Learn more
-%section#one
-  .container.wow.fadeInUp
-    %h2 Cards
-    %p.lead
-      What you notice first in
-      %a{:href => "http://v4-alpha.getbootstrap.com/"} Bootstrap 4
-      is that
-      %code .panel
-      and
-      %code .well
-      have been replaced by the
-      = succeed "." do
-        %code .card
-      %a{:href => ""} Bootstrap 4 Cards
-      can be singular, grouped together (as shown) or
-      = succeed "." do
-        %a{:href => ""} equal height
-    .card-group
-      / card
-      .card
-        %img.card-img-top.img-fluid{:alt => "Card image cap", :src => "https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample13.jpg"}/
-        .card-block
-          %h4.card-title Consise
-          %p.card-text Cards are a good way to display content composed of different types of objects. They’re well-suited for presenting similar objects whose size or supported actions vary, like headings and photos with captions.
-      / card
-      .card
-        %img.card-img-top.img-fluid{:alt => "Card image cap", :src => "https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample19.jpg"}/
-        .card-block
-          %h4.card-title Grouped
-          %p.card-text
-            Use card groups to render equal height cards without gutters between the cards. Use
-            %code .card-deck
-            for cards that aren’t attached to each another.
-      / card
-      .card
-        %img.card-img-top.img-fluid{:alt => "Card image cap", :src => "https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample14.jpg"}/
-        .card-block
-          %h4.card-title Same Height
-          %p.card-text A frequent problem occurs when you have multiple items in a row with content of varying height. Thanks to flexbox (and display:table) we now have equal height cards!
-%section#two.bg-alt
-  .container
-    .row
-      .col-lg-12.text-center
-        %h2.m-t-0.text-primary Flexbox
-        %hr.primary/
-  .container.wow.fadeInUp
-    .row
-      .col-lg-4.col-md-4.text-center
-        .feature
-          %i.icon-lg.ion-ios-grid-view-outline.wow.fadeIn{"data-wow-delay" => ".1s"}
-          %h6.text-uppercase Easier
-          %p.text-muted.m-b-0
-            Flexbox provides
-            %a{:href => "http://v4-alpha.getbootstrap.com/getting-started/flexbox"} simpler, more flexible layout
-            options like vertical centering.
-      .col-lg-4.col-md-4.text-center
-        .feature
-          %i.icon-lg.ion-social-sass.wow.fadeInUp
-          %h6.text-uppercase Sass-y
-          %p.text-muted.m-b-0 Use SASS to easily customize your Bootstrap 4 projects.
-      .col-lg-4.col-md-4.text-center
-        .feature
-          %i.icon-lg.ion-social-css3-outline.wow.fadeIn{"data-wow-delay" => ".1s"}
-          %h6.text-uppercase It's Modern
-          %p.text-muted.m-b-0
-            Introduced in CSS3, flexbox won't work in older browsers like
-            = succeed "." do
-              %a{:href => "http://caniuse.com/#feat=flexbox"} IE9
-%section#three
-  .container-fluid
-    %h5.text-primary.text-center.text-uppercase Now there are 5 Breakpoints
-    %p.text-center
-      %small To accomodate a variety of devices and screen widths
-    .row
-      .col-sm-10.offset-sm-1.col-12.offset-0
+#index
+  %section#headline-cover
+    .container
+      .row
+        .col-md-6
+          %h1.headline-text{"data-aos" => "fade-up-right"}
+            Simplify and Automate Your Training Business
+          %p.subheading-text{"data-aos" => "fade-up-right"}
+            TMS is a cloud-based business solution that is designed for tutoring center, language center, music schools, or training center.
+          .buttons-container{"data-aos" => "fade-up-right"}
+            %a.btn.btn-lg.btn-primary.btn-round.btn-main-cta{"data-target" => "#purchaseModal", "data-toggle" => "modal", href: "#"}
+              Create your account
+            %span.or or
+            %a.btn.btn-link{href: "features.html"}
+              Take a tour →
+        .col-md-6.hidden-sm.hidden-xs{"data-aos" => "fade-up-left"}
+          %img.img-responsive.main-img{alt: "", src: "/images/display/mockup-4.png"}/
+  %section#horizontal-features
+    .container
+      .row
+        .col-md-4.feature-item
+          .image
+            %img{alt: "", src: "/images/smallicons-svg/www.svg"}/
+          .text
+            %h4 Built with Bootstrap 3
+            %p.lead Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, nam, accusamus
+        .col-md-4.feature-item
+          .image
+            %img{alt: "", src: "/images/smallicons-svg/eye.svg"}/
+          .text
+            %h4 Easily Custmizable
+            %p.lead Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, nam, accusamus
+        .col-md-4.feature-item
+          .image
+            %img{alt: "", src: "/images/smallicons-svg/store.svg"}/
+          .text
+            %h4 20+ Page Options
+            %p.lead Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, nam, accusamus
+      / /.row
+    / /.container
+  %section#features
+    .container
+      .row
+        .col-md-12.text-center
+          %h2 Do you want to get your website up and running quickly?
+          %p.lead Purchase this template and create your beautiful website easily
+    .container
+      .row.feature-single
+        .col-md-6.col-sm-4.image.hidden-xs{"data-aos" => "fade-up-right"}
+          %img.img-responsive{alt: "feature1", src: "/images/display/mockup-2.png"}/
+        .col-md-6.col-sm-8.text{"data-aos" => "fade-up-left"}
+          %h3
+            Built with Bootstrap 3, so it comes with a lot of goodies baked in
+          %p.lead
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, incidunt, vel quam corporis consequuntur ab optio distinctio est enim provident nam magnam.
+      .divider
+      .row.feature-single
+        .col-md-6.col-sm-8.text{"data-aos" => "fade-up-right"}
+          %h3
+            Easy to customize, 20+ page options. Get your unique look easily
+          %p.lead
+            Illum sapiente nulla cumque vero minima rem molestias provident fugit et sed blanditiis ipsam neque atque ratione iusto?
+        .col-md-6.col-sm-4.image.hidden-xs{"data-aos" => "fade-up-left"}
+          %img.img-responsive{alt: "feature1", src: "/images/display/mockup-5.png"}/
+      .feature-square-list{"data-aos" => "fade-up"}
         .row
-          .col-md-2.offset-md-1.offset-sm-0
-            .card-block.text-center
-              %h1.card-title XS
-              %h3.text-muted <34 em
-              %hr.primary.hidden-sm-up/
-          .col-md-2
-            .card-block.text-center
-              %h1.card-title SM
-              %h3.text-muted ≥34 em
-              %hr.primary.hidden-md-up/
-          .col-md-2
-            .card-block.text-center
-              %h1.card-title MD
-              %h3.text-muted ≥48 em
-              %hr.primary.hidden-lg-up/
-          .col-md-2
-            .card-block.text-center
-              %h1.card-title LG
-              %h3.text-muted ≥62 em
-              %hr.primary.hidden-xl-up/
-          .col-md-2
-            .card-block.text-center
-              %h1.card-title XL
-              %h3.text-muted ≥75 em
-              %hr.primary/
-    .row
-      .col-10.offset-1
-        .row
-          .col-xl-2.col-lg-3.col-md-4.col-sm-6.text-center
-            .card
-              %img.img-fluid{:src => "//s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample14.jpg"}/
-              .card-img-overlay
-                %h4.card-title.text-center
-                  %a.text-light{"data-src" => "https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample3.jpg", "data-toggle" => "modal", :href => "#galleryModal"} view
-          .col-xl-2.col-lg-3.col-md-4.col-sm-6.text-center
-            .card
-              %img.img-fluid{:src => "https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample20.jpg"}/
-              .card-img-overlay
-                %h4.card-title.text-center
-                  %a.text-light{"data-src" => "https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample3.jpg", "data-toggle" => "modal", :href => "#galleryModal"} view
-          .col-xl-2.col-lg-3.col-md-4.col-sm-6.text-center
-            .card.card-inverse
-              %img.img-fluid{:src => "https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample22.jpg"}/
-              .card-img-overlay
-                %h4.card-title.text-center
-                  %a.text-light{"data-src" => "https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample3.jpg", "data-toggle" => "modal", :href => "#galleryModal"} view
-          .col-xl-2.col-lg-3.col-md-4.col-sm-6.text-center
-            .card
-              %img.img-fluid{:src => "https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample15.jpg"}/
-              .card-img-overlay
-                %h4.card-title.text-center
-                  %a.text-light{"data-src" => "https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample3.jpg", "data-toggle" => "modal", :href => "#galleryModal"} view
-          .col-xl-2.col-lg-3.col-md-4.col-sm-6.text-center
-            .card
-              %img.img-fluid{:src => "https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample35.jpg"}/
-              .card-img-overlay
-                %h4.card-title.text-center
-                  %a.text-light{"data-src" => "https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample35.jpg", "data-toggle" => "modal", :href => "#galleryModal"} view
-          .col-xl-2.col-lg-3.col-md-4.col-sm-6.text-center
-            .card
-              %img.img-fluid{:src => "https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample16.jpg"}/
-              .card-img-overlay
-                %h4.card-title.text-center
-                  %a.text-light{"data-src" => "https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample16.jpg", "data-toggle" => "modal", :href => "#galleryModal"} view
-          .col-xl-2.col-lg-3.col-md-4.col-sm-6.text-center
-            .card
-              %img.card-img.img-fluid{:src => "https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample13.jpg"}/
-              .card-img-overlay
-                %h4.card-title.text-center
-                  %a.text-light{"data-src" => "https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample13.jpg", "data-toggle" => "modal", :href => "#galleryModal"} view
-          .col-xl-2.col-lg-3.col-md-4.col-sm-6.text-center
-            .card
-              %img.img-fluid{:src => "https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample11.jpg"}/
-              .card-img-overlay
-                %h4.card-title.text-center
-                  %a.text-light{"data-src" => "https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample11.jpg", "data-toggle" => "modal", :href => "#galleryModal"} view
-          .col-xl-2.col-lg-3.col-md-4.col-sm-6.text-center
-            .card
-              %img.img-fluid{:src => "https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample23.jpg"}/
-              .card-img-overlay
-                %h4.card-title.text-center
-                  %a.text-light{"data-src" => "https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample3.jpg", "data-toggle" => "modal", :href => "#galleryModal"} view
-          .col-xl-2.col-lg-3.col-md-4.col-sm-6.text-center
-            .card
-              %img.card-img.img-fluid{:src => "https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample9.jpg"}/
-              .card-img-overlay
-                %h4.card-title.text-center
-                  %a.text-light{"data-src" => "https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample9.jpg", "data-toggle" => "modal", :href => "#galleryModal"} view
-          .col-xl-2.col-lg-3.col-md-4.col-sm-6.text-center
-            .card
-              %img.img-fluid{:src => "https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample5.jpg"}/
-              .card-img-overlay
-                %h4.card-title.text-center
-                  %a.text-light{"data-src" => "https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample5.jpg", "data-toggle" => "modal", :href => "#galleryModal"} view
-          .col-xl-2.col-lg-3.col-md-4.col-sm-6.text-center
-            .card
-              %img.img-fluid{:src => "https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample4.jpg"}/
-              .card-img-overlay
-                %h4.card-title.text-center
-                  %a.text-light{"data-src" => "https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample4.jpg", "data-toggle" => "modal", :href => "#galleryModal"} view
-          .col-xl-3.col-lg-3.col-md-4.col-sm-6.text-center
-            .card
-              %img.card-img.img-fluid{:src => "https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample3.jpg"}/
-              .card-img-overlay
-                %h4.card-title.text-center
-                  %a.text-light{"data-src" => "https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample3.jpg", "data-toggle" => "modal", :href => "#galleryModal"} view
-          .col-xl-3.col-lg-3.col-md-4.col-sm-6.text-center
-            .card
-              %img.img-fluid{:src => "https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample2.jpg"}/
-              .card-img-overlay
-                %h4.card-title.text-center
-                  %a.text-light{"data-src" => "https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample2.jpg", "data-toggle" => "modal", :href => "#galleryModal"} view
-          .col-xl-3.col-lg-3.col-md-4.col-sm-6.text-center
-            .card
-              %img.img-fluid{:src => "https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample7.jpg"}/
-              .card-img-overlay
-                %h4.card-title.text-center
-                  %a.text-light{"data-src" => "https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample7.jpg", "data-toggle" => "modal", :href => "#galleryModal"} view
-          .col-xl-3.offset-xl-0.col-lg-3.offset-lg-0.col-md-4.offset-md-4.col-sm-6.text-center
-            .card.m-x-auto
-              %img.img-fluid{:src => "https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample21.jpg"}/
-              .card-img-overlay
-                %h4.card-title.text-center
-                  %a.text-light{"data-src" => "https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample21.jpg", "data-toggle" => "modal", :href => "#galleryModal"} view
-  %br/
-%aside.bg-alt
-  .container.text-center
-    %h2.text-primary.text-center The Grid is More Flexible
-    %hr.primary/
-    %br/
-    .row.wow.fadeInUp
-      .col-md-3.col-sm-6.col-12.text-center
-        %h3 Start
-        %i.icon-lg.ion-ios-speedometer-outline.wow.pulse
-        %h1.text-primary 100
-      .col-md-3.col-sm-6.col-12.text-center
-        %h3 Migrate
-        %i.icon-lg.ion-ios-location-outline.wow.pulse
-        %h1.text-primary 3421
-      .col-md-3.col-sm-6.col-12.text-center
-        %h3 Build
-        %i.icon-lg.ion-ios-pulse.wow.pulse
-        %h1.text-primary 4%
-      .col-md-3.col-sm-6.col-12.text-center
-        %h3 Play
-        %i.icon-lg.ion-ios-game-controller-b-outline.wow.pulse
-        %h1.text-primary 50%
-    %hr/
-    %br/
-  .container
-    .row
-      .col-sm-6
-        6
-      .col-sm-6.text-normal
-        .card.bg-primary 6 units
-      .col-sm-5
-        5
-      .col-sm-7.text-normal
-        .card.bg-primary 7 units
-      .col-sm-4
-        4
-      .col-sm-8.text-normal
-        .card.bg-primary 8 units
-      .col-sm-3
-        3
-      .col-sm-9.text-normal
-        .card.bg-primary 9 units
-      .col-sm-2
-        2
-      .col-sm-10.text-normal
-        .card.bg-primary 10 units
-      .col-sm-1
-        1
-      .col-sm-11.text-normal
-        .card.bg-primary 11 units
-  %hr/
-  .container
-    .row
-      .col-lg-2.text-normal
-        .card.bg-primary 2
-      .col-lg-10
-      .col-lg-4.text-normal
-        .card.bg-primary 4
-      .col-lg-8
-      .col-lg-6.text-normal
-        .card.bg-primary 6
-      .col-lg-6
-      .col-lg-8.text-normal
-        .card.bg-primary 8
-      .col-lg-4
-      .col-lg-10.text-normal
-        .card.bg-primary 10
-      .col-lg-2
-      .col-lg-12.text-normal
-        .card.bg-primary 12
-%section#four
-  .container
-    .row
-      .col-12.col-lg-6
-        %h2.text-nowrap Fonts got larger
-      .col-12.col-lg-6.text-right
-        %button.btn.btn-lg.text-normal.btn-outline-secondary Outline
-        %button.btn.btn-lg.text-normal.btn-outline-primary Buttons
-        %button.btn.btn-lg.text-normal.btn-outline-danger Are Here
-      .col-12
-        %br/
-        %h1.display-4 Wow.
-        %p.lead.text-justify Text is larger in Bootstrap 4. The default font size is now 16px. There are also new "Display headings" that really stand out. The new `em` based sizing is cool too.
-    %hr/
-    .row
-      .col-md-6.col-12.text-center
-        %nav.navbar.navbar-inverse.bg-inverse.navbar-toggleable.text-normal.rounded
-          %ul.navbar-nav
-            %li.nav-item.active
-              %a.nav-link{:href => "#"} Home
-            %li.nav-item
-              %a.nav-link{:href => "#"} Features
-            %li.nav-item
-              %a.nav-link{:href => "#"} Pricing
-            %li.nav-item
-              %a.nav-link{:href => "#"} About
-      .col-md-6.col-12
-        %h2 Navbar
-        %p.text-justify
-          The new Bootstrap 4
-          %code .navbar
-          code is lighter. You can make it responsive using the Collapse component and
-          %code .navbar-toggleable-*
-          classes that enable you to control the breakpoint.
-      .col-12.clearfix
-        %hr/
-      .col-md-6.col-12
-        %h2 RIP icons, affix, etc..
-        %p.text-justify
-          Some components have been removed from Bootstrap 4. The Glyphicons icon fonts are no longer included, but it's easy to
-          utilize another font like FontAwesome,
-          %a{:href => "https://octicons.github.com/"} Octicons
-          or
-          = succeed "." do
-            %a{:href => "http://ionicons.com/"} Ionicons
-      .col-md-6.col-12.text-center
-        .row
-          .col-lg-3.col-md-3.col-6.text-center
-            %a{"data-target" => "#alertModal", "data-toggle" => "modal", :href => "#alertModal"}
-              %i.icon-lg.ion-ios-cloud-download-outline.wow.fadeIn
-          .col-lg-3.col-md-3.col-6.text-center
-            %i.icon-lg.ion-ios-pie-outline.wow.fadeIn.text-primary
-          .col-lg-3.col-md-3.col-6.text-center
-            %i.icon-lg.ion-ios-star-outline.wow.fadeIn.text-primary
-          .col-lg-3.col-md-3.col-6.text-center
-            %i.icon-lg.ion-ios-heart-outline.wow.fadeIn.text-primary
-          .col-lg-3.col-md-3.col-6.text-center
-            %i.icon-lg.ion-ios-pulse.wow.fadeIn.text-primary
-          .col-lg-3.col-md-3.col-6.text-center
-            %i.icon-lg.ion-ios-refresh-outline.wow.fadeIn.text-primary
-          .col-lg-3.col-md-3.col-6.text-center
-            %i.icon-lg.ion-ios-gear-outline.wow.fadeIn.text-primary
-          .col-lg-3.col-md-3.col-6.text-center
-            %i.icon-lg.ion-ios-timer-outline.wow.fadeIn.text-primary
-      .col-12.clearfix
-        %hr/
-      .col-md-6.col-12
-        .card.text-normal
-          .card-block
-            %ul.list-unstyled
-              %li.text-capitalize
-                %code.text-lowercase text-capitalize
-                Capitalize each word
-              %li.text-uppercase
-                %code.text-lowercase text-uppercase
-                Uppercase text
-              %li.text-lowercase
-                %code text-lowercase
-                There is lowercase too
-              %li.text-truncate
-                %code text-truncate
-                some longer text that won't wrap and will truncate with ellipsis at the end.
-            %h6 Migration tips
-            %ul.list-unstyled
-              %li
-                %code well
-                \=
-                %code card card-block
-              %li
-                %code panel panel-default
-                \=
-                %code card
-              %li
-                %code pull-right
-                \=
-                %code float-right
-              %li
-                %code img-responsive
-                \=
-                %code img-fluid
-              %li
-                %code list-inline > li
-                \=
-                %code list-inline-item
-              %li
-                add
-                %code nav-item
-                to nav navbar > li
-              %li
-                add
-                %code nav-link
-                to nav navbar > li > a
-              %li
-                the
-                %code active
-                class is added to
-                %code nav-item
-                for scrollspy
-              %li
-                %code carousel-inner > item
-                \=
-                %code carousel-item
-              %li
-                %code table-condensed
-                \=
-                %code table-sm
-              %li
-                %code input-lg
-                \=
-                %code form-control-lg
-              %li
-                %code input-sm
-                \=
-                %code form-control-sm
-            Here's a handy
-            %a{:href => "http://upgrade-bootstrap.bootply.com/"} Bootstrap 3 to 4 upgrade tool
-            to convert your code!
-      .col-md-6.col-12
-        %h2 Handy utilities
-        %p.text-justify
-          Several simple, but useful
-          %a{:href => "http://v4-alpha.getbootstrap.com/components/utilities"} utility classes
-          have been added like text, margin and padding helpers. There are
-          also
-          %a{:href => "http://v4-alpha.getbootstrap.com/components/utilities/#contextual-colors-and-backgrounds"} contextual colors
-          and
-          %a{:href => "http://v4-alpha.getbootstrap.com/layout/responsive-utilities/"} responsive utility
-          classes to hide content on
-          specific breakpoints. There's even a new fluid Jumbotron!
-%aside.bg-alt
-  .container.text-center
-    .call-to-action
-      %h2.text-primary Get Started
-      %a.btn.btn-primary-outline.btn-lg.wow.flipInX.text-uppercase{:href => "http://bootstrap4.guide", :target => "ext"} Free Download
-    %br/
-    %hr/
-    %br/
-    .row
-      .col-lg-10.offset-lg-1
-        %h6.wide-space.text-center.text-uppercase Bootstrap is Built on these Standards
-        .row
-          .col-sm-3.col-6.text-center
-            %i.icon-lg.ion-social-html5-outline{:title => "html 5"}
-          .col-sm-3.col-6.text-center
-            %i.icon-lg.ion-social-sass{:title => "sass"}
-          .col-sm-3.col-6.text-center
-            %i.icon-lg.ion-social-javascript-outline{:title => "javascript"}
-          .col-sm-3.col-6.text-center
-            %i.icon-lg.ion-social-css3-outline{:title => "css 3"}
-%section#last
-  .container
-    .row
-      .col-lg-8.offset-lg-2.text-center
-        %h2.margin-top-0.wow.fadeIn Get in Touch
-        %hr.primary/
-        %p We love feedback. Fill out the form below and we'll get back to you as soon as possible.
-      .col-lg-10.offset-lg-1.text-center
-        %form.contact-form.row
-          .col-md-4
-            %label
-            %input.form-control{:placeholder => "Name", :type => "text"}/
-          .col-md-4
-            %label
-            %input.form-control{:placeholder => "Email", :type => "text"}/
-          .col-md-4
-            %label
-            %input.form-control{:placeholder => "Phone", :type => "text"}/
           .col-md-12
-            %label
-            %textarea.form-control{:placeholder => "Your message here..", :rows => "9"}
-          .col-md-4.offset-md-4
-            %label
-            %button.btn.btn-primary.btn-block.btn-lg{"data-target" => "#alertModal", "data-toggle" => "modal", :type => "button"}
-              Send
-              %i.ion-android-arrow-forward
-#galleryModal.modal.fade{"aria-hidden" => "true", :role => "dialog", :tabindex => "-1"}
-  .modal-dialog
-    .modal-content
-      .modal-body.text-center
-        %img#galleryImage.center-block.img-fluid{:src => "//placehold.it/1200x700/222?text=..."}/
-        %p
-          %br/
-          %button.btn.btn-primary.btn-lg{"aria-hidden" => "true", "data-dismiss" => "modal"}
-            Close
-            %i.ion-android-close
-#aboutModal.modal.fade{"aria-hidden" => "true", :role => "dialog", :tabindex => "-1"}
-  .modal-dialog
-    .modal-content
-      .modal-body.text-center
-        %h2.text-center Bootstrap 4 Theme
-        %h6.text-center A free, responsive template
-        %p.text-center
-          This is a customized, single page example template that demonstrates some of the new features to check out in Bootstrap 4. Some of the features include Google Montserrat fonts, animation using Dan Eden's animate.css and the WOW jQuery plugin to watch the scrolling.
-        %p.text-center
-          %a{:href => "http://bootstrap4.guide"} Download at Bootstrap4.guide
-        %br/
-        %button.btn.btn-primary.btn-lg{"aria-hidden" => "true", "data-dismiss" => "modal"} OK
-#alertModal.modal.fade{"aria-hidden" => "true", :role => "dialog", :tabindex => "-1"}
-  .modal-dialog.modal-sm
-    .modal-content
-      .modal-body.text-center
-        %h2.text-center Nice Job!
-        %p.text-center You clicked the button, but it doesn't actually go anywhere because this is only a demo.
-        %p.text-center
-          %a{:href => "https://medium.com/@bootply/bootstrap-4-whats-new-visual-guide-c84dd81d8387"} Learn More
-        %br/
-        %button.btn.btn-primary.btn-lg{"aria-hidden" => "true", "data-dismiss" => "modal"}
-          OK
-          %i.ion-android-close
+            .additional-header
+              %h3 Need more features?
+        .row
+          .col-md-4.feature-square-single
+            .main-icon-container
+              %i.material-icons account_balance
+            %h5 Clean & Well-Maintained Code
+            %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, natus reprehenderit delectus officiis
+          .col-md-4.feature-square-single.second
+            .main-icon-container
+              %i.material-icons web
+            %h5 NodeJS & Ruby on Rails Versions
+            %p Officiis similique dolore soluta hic quaerat ab explicabo maiores fugit voluptatem expedita
+          .col-md-4.feature-square-single
+            .main-icon-container
+              %i.material-icons gesture
+            %h5 Subtle CSS Transition & Animations
+            %p Similique dolore soluta hic quaerat ab explicabo maiores fugit voluptatem expedita veritatis
+  %section#highlight-cta{"data-aos" => "fade-up"}
+    .container
+      .row
+        .col-md-8.col-md-offset-2.text.text-center
+          %h2
+            Ready to create your website?
+          %p.lead
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, reiciendis vel quisquam consectetur fuga qui aperiam iste.
+          %a.btn.btn-lg.btn-primary.btn-round{"data-target" => "#purchaseModal", "data-toggle" => "modal", href: "#"}
+            Purchase Now
+            \→
+  %section#testimonial-stats{"data-aos" => "fade-up"}
+    .container
+      .row
+        .col-md-12.text-center
+          .heading
+            %h2 Used by over 10,000 people across the globe!
+            %p.lead Here's what our users say about us →
+      .row
+        .col-md-6
+          .testimonial{"data-aos" => "fade-up-right"}
+            .quote-author
+              %img.img-circle{alt: "testimonial1", src: "/images/cleancut/avatar1.jpg"}/
+              .author-name John Doe
+              .author-company Awesome Inc
+            .quote-text
+              .arrow-left
+                .arrow
+                .arrow-border
+              This is a great template! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, suscipit, tempora laboriosam quam alias dolor placeat mollitia incidunt sit distinctio debitis deleniti soluta aut tenetur odio minus fugit atque quos!
+        .col-md-6
+          .testimonial{"data-aos" => "fade-up-left"}
+            .quote-author
+              %img.img-circle{alt: "testimonial1", src: "/images/cleancut/avatar2.jpg"}/
+              .author-name Jane Doe
+              .author-company Foo Biz
+            .quote-text
+              .arrow-left
+                .arrow
+                .arrow-border
+              This is a great template! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, suscipit, tempora laboriosam quam alias dolor placeat mollitia incidunt sit distinctio debitis deleniti soluta aut tenetur odio minus fugit atque quos!
+      .row
+        .col-md-6.col-md-offset-3
+          .testimonial{"data-aos" => "fade-up"}
+            .quote-author
+              %img.img-circle{alt: "testimonial1", src: "/images/cleancut/avatar3.jpg"}/
+              .author-name Jane Doe
+              .author-company Foo Biz
+            .quote-text
+              .arrow-left
+                .arrow
+                .arrow-border
+              This is a great template! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, suscipit, tempora laboriosam quam alias dolor placeat mollitia incidunt sit distinctio debitis deleniti soluta aut tenetur odio minus fugit atque quos!
+  %section#company-slider{"data-aos" => "fade-up"}
+    .container
+      .row
+        .col-md-12
+          .logos
+            .row
+              .col-md-12
+                .additional-header
+                  %h3 Companies that use us
+            #logo-slider
+              .item
+                %img{src: "/images/company-logos-svg/bosch.svg"}/
+              .item
+                %img{src: "/images/company-logos-svg/cisco.svg"}/
+              .item
+                %img{src: "/images/company-logos-svg/codeacademy.svg"}/
+              .item
+                %img{src: "/images/company-logos-svg/facebook.svg"}/
+              .item
+                %img{src: "/images/company-logos-svg/instagram.svg"}/
+              .item
+                %img{src: "/images/company-logos-svg/linkedin.svg"}/
+              .item
+                %img{src: "/images/company-logos-svg/motorola.svg"}/
+              .item
+                %img{src: "/images/company-logos-svg/nokia.svg"}/
+              .item
+                %img{src: "/images/company-logos-svg/shopify.svg"}/
+              .item
+                %img{src: "/images/company-logos-svg/soundcloud.svg"}/
+          .row
+            .col-md-12.text-center
+              %a.btn.btn-bordered.btn-lg.btn-round.btn-primary{href: "#"}
+                Read more testimonials →
+  %section#pricing-table{"data-aos" => "fade-up"}
+    .container
+      .row
+        .col-md-12.text-center
+          %h2 Simple, honest pricing. No hidden fees.
+          %p.lead
+            No long term contracts. Change your plan at any time.
+      .row.p-tables
+        .col-md-3{"data-aos" => "fade-up-right"}
+          .panel.panel-default.text-center
+            .panel-heading
+              %p.lead.text-muted.plan-title Basic
+              %h3.panel-title.price
+                $9
+                %span.price-cents 99
+                %span.price-month mo.
+            %ul.list-group
+              %li.list-group-item 5 Projects
+              %li.list-group-item 5 GB of Storage
+              %li.list-group-item Up to 100 Users
+              %li.list-group-item 10 GB Bandwidth
+              %li.list-group-item Security Suite
+              %li.list-group-item.button-wrapper
+                %a.btn.btn-default Sign Up Now!
+        .col-md-3.popular-plan{"data-aos" => "fade-up"}
+          .panel.panel-default.text-center
+            .popular-label
+              Popular!
+            .panel-heading
+              %p.lead.text-muted.plan-title Plus
+              %h3.panel-title.price
+                $19
+                %span.price-cents 99
+                %span.price-month mo.
+            %ul.list-group
+              %li.list-group-item 10 Projects
+              %li.list-group-item 10 GB of Storage
+              %li.list-group-item Up to 250 Users
+              %li.list-group-item 25 GB Bandwidth
+              %li.list-group-item Security Suite
+              %li.list-group-item.button-wrapper
+                %a.btn.btn-primary Sign Up Now!
+        .col-md-3{"data-aos" => "fade-up-left"}
+          .panel.panel-default.text-center
+            .panel-heading
+              %p.lead.text-muted.plan-title Premium
+              %h3.panel-title.price
+                $29
+                %span.price-cents 99
+                %span.price-month mo.
+            %ul.list-group
+              %li.list-group-item Unlimited
+              %li.list-group-item 50 GB of Storage
+              %li.list-group-item Up to 1000 Users
+              %li.list-group-item 100 GB Bandwidth
+              %li.list-group-item Security Suite
+              %li.list-group-item.button-wrapper
+                %a.btn.btn-default Sign Up Now!
+        .col-md-3{"data-aos" => "fade-up-left"}
+          .panel.panel-default.text-center
+            .panel-heading
+              %p.lead.text-muted.plan-title Ultimate
+              %h3.panel-title.price
+                $49
+                %span.price-cents 99
+                %span.price-month mo.
+            %ul.list-group
+              %li.list-group-item Unlimited
+              %li.list-group-item 150 GB of Storage
+              %li.list-group-item Unlimited
+              %li.list-group-item 500 GB Bandwidth
+              %li.list-group-item Security Suite
+              %li.list-group-item.button-wrapper
+                %a.btn.btn-default Sign Up Now!
+      .row.call-us
+        .col-md-12
+          .additional-header
+            %h3
+              %i.fa.fa-phone
+              Need help choosing a plan?
+          .text
+            %p.lead
+              Not sure of which plan to choose? Give us a call at
+              %strong 456-121-1212
+              and our dedicated support staff will help you figure out the best plan for you.
+  #feature-boxed{"data-aos" => "fade-up"}
+    .container
+      .row
+        .col-md-12.text-center
+          .heading
+            %h2
+              Everything you need to launch your startup
+              %br/
+              %small
+                Get yourself ahead with this beautiful template.
+      .row
+        .col-md-4.feature-item
+          %i.fa.fa-picture-o.feature-icon
+          .text
+            %h5 Beauifully Designed Pages
+            %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, reprehenderit, doloribus corporis necessitatibus ut sint voluptates id excepturi laborum.
+        .col-md-4.feature-item
+          %i.fa.fa-eye.feature-icon
+          .text
+            %h5 Easily Customizable
+            %p Voluptatibus impedit obcaecati incidunt aliquid molestias voluptate fugiat excepturi accusantium quibusdam dolore beatae quidem vero voluptates a quasi.
+        .col-md-4.feature-item
+          %i.fa.fa-mobile-phone.feature-icon
+          .text
+            %h5 Works well on mobile & tablets
+            %p Necessitatibus, nemo aliquid. Nihil, ullam consequatur ipsa placeat.Explicabo perspiciatis voluptates quam quia aliquid at rem nulla omnis sit.
+      .row
+        .col-md-4.feature-item
+          %i.fa.fa-signal.feature-icon
+          .text
+            %h5 Analytics
+            %p Laboriosam quod aperiam blanditiis ratione odit officiis deserunt quas mollitia totam similique!
+        .col-md-4.feature-item
+          %i.fa.fa-clock-o.feature-icon
+          .text
+            %h5 Blog and Coming Soon pages included
+            %p Rem, dolorem, magni aspernatur delectus nihil reiciendis temporibus ipsum rerum iusto placeat vero.
+        .col-md-4.feature-item
+          %i.fa.fa-flask.feature-icon
+          .text
+            %h5 Bright, cheerful colors
+            %p
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, earum, dolorum iste ut sed dolor!
+      .row
+        .col-md-4.col-md-offset-4
+          .text-center
+            %a.btn.btn-lg.btn-block.btn-primary.btn-round.btn-main-cta{href: "#"}
+              %i.material-icons add_shopping_cart
+              Purchase Now

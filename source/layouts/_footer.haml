@@ -1,46 +1,137 @@
-%footer#footer
-  .container
+%footer#main-footer
+  .container.menu-container
     .row
-      .col-6.col-sm-3
-        %h6.text-uppercase Bootstrap 4
-        %ul.list-unstyled
+      .col-sm-8.col-xs-12
+        .row
+          .col-sm-4.col-xs-6.footer-menu
+            %h3
+              %span Overview
+            %ul.unstyled
+              %li
+                %a{:href => "index.html"}
+                  %i.material-icons home
+                  Home
+              %li
+                %a{:href => "index-3.html"}
+                  %i.material-icons home
+                  Mobile App Landing
+              %li
+                %a{:href => "about.html"}
+                  %i.material-icons supervisor_account
+                  About Us
+                  %small.label.label-success New!
+              %li
+                %a{:href => "services.html"}
+                  %i.material-icons done_all
+                  Services
+              %li
+                %a{:href => "features.html"}
+                  %i.material-icons new_releases
+                  Features
+              %li
+                %a{:href => "pricing.html"}
+                  %i.material-icons monetization_on
+                  Pricing
+              %li
+                %a{:href => "contact-us.html"}
+                  %i.material-icons contact_mail
+                  Contact
+          / footer menu
+          .col-sm-4.col-xs-6.footer-menu
+            %h3
+              %span Menu
+            %ul.unstyled
+              %li
+                %a{:href => "portfolio-1-col.html"}
+                  %i.material-icons brightness_4
+                  Portfolio 1
+              %li
+                %a{:href => "portfolio-2-col.html"}
+                  %i.material-icons brightness_5
+                  Portfolio 2
+              %li
+                %a{:href => "portfolio-3-col.html"}
+                  %i.material-icons brightness_6
+                  Portfolio 3
+              %li
+                %a{:href => "gallery-4-col.html"}
+                  %i.material-icons compare
+                  Gallery
+              %li
+                %a{:href => "support.html"}
+                  %i.material-icons record_voice_over
+                  Knowledge Base
+              %li
+                %a{:href => "faq.html"}
+                  %i.material-icons question_answer
+                  FAQ
+          / footer menu
+          .col-sm-4.hidden-xs.footer-menu
+            %h3
+              %span Social
+            %ul.unstyled
+              %li
+                %a{:href => "blog-home-1.html"}
+                  %i.material-icons border_color
+                  Blog 1
+              %li
+                %a{:href => "blog-home-2.html"}
+                  %i.material-icons insert_emoticon
+                  Micro Blog
+              %li
+                %a{:href => "features.html"}
+                  %i.fa.fa-youtube
+                  Youtube
+              %li
+                %a{:href => "services.html"}
+                  %i.fa.fa-facebook
+                  Facebook
+              %li
+                %a{:href => "pricing.html"}
+                  %i.fa.fa-twitter
+                  Twitter
+              %li
+                %a{:href => "pricing.html"}
+                  %i.fa.fa-linkedin
+                  LinkedIn
+      .col-sm-4.hidden-xs.blog-item
+        %h3
+          %span Blog
+        %a{:href => "blog-home-1.html"}
+          .image-wrapper
+            %img{:alt => "", :src => "/images/cleancut/website.png"}/
+            .text
+              %h4
+                How to create a beautiful website?
+  .copyright-footer
+    .container
+      .row
+        .col-md-12
+          StartKit. Copyright © 2016. All Rights Reserved
+          .pull-right.hidden-xs
+            %a{:href => "https://authenticpixels.com", :target => "_blank", :title => "Bootstrap Templates"} Authentic Pixels
+#purchaseModal.modal.fade.zoom-out
+  .modal-dialog
+    .modal-content
+      .modal-header
+        %button.close{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"} &ttimes;
+        %h4.modal-title Modal example
+      .modal-body
+        %p.lead
+          This is a modal with costom transitions. You can choose from 'zoom-out' 'move-horizontal' & 'newspaper-effect'.
+        %p
+          Below are some are some other home page variants that you can use -
+        %ul
           %li
-            %a{:href => "https://medium.com/@bootply/bootstrap-4-whats-new-visual-guide-c84dd81d8387", :target => "ext"} What's New
+            %a{:href => "index.html"}
+              Default home page with 2
           %li
-            %a{:href => "http://codeply.com/tagged/bootstrap-4", :target => "ext"} Examples
+            %a{:href => "index-2.html"}
+              Home page for software products
           %li
-            %a{:href => "http://getbootstrap.com", :target => "ext"} Official
-          %li
-            %a{:href => "http://www.codeply.com/go/p/bootstrap_4.0.alpha", :target => "ext"} Playground
-      .col-6.col-sm-3.column
-        %h6.text-uppercase About
-        %ul.list-unstyled
-          %li
-            %a{:href => "#"} Contact Us
-          %li
-            %a{:href => "#"} Delivery Information
-          %li
-            %a{:href => "#"} Privacy Policy
-          %li
-            %a{:href => "#"} Terms & Conditions
-      .col-12.col-sm-3.column
-        %h6.text-uppercase Stay Posted
-        %form
-          .form-group
-            %input.form-control{:placeholder => "Tell us your email", :title => "No spam, we promise!", :type => "text"}/
-          .form-group
-            %button.btn.btn-primary{"data-target" => "#alertModal", "data-toggle" => "modal", :type => "button"} Subscribe for updates
-      .col-12.col-sm-3.text-right
-        %h6.text-uppercase Follow
-        %ul.list-inline
-          %li.list-inline-item
-            %a{:href => "", :rel => "nofollow", :title => "Twitter"}>
-              %i.icon-lg.ion-social-twitter-outline
-             
-          %li.list-inline-item
-            %a{:href => "", :rel => "nofollow", :title => "Facebook"}
-              %i.icon-lg.ion-social-facebook-outline
-    %br/
-    %span.float-right.text-muted.small
-      %a{:href => "http://bunnywave.com"} Generated by TMS
-      ©2016-#{Time.now.year} Mindhub InnoTech Limited
+            %a{:href => "index-3.html"}
+              Home page for Mobile apps
+      .modal-footer
+        %button.btn.btn-default{"data-dismiss" => "modal", :type => "button"} Close
+    / /.modal-content
+  / /.modal-dialog

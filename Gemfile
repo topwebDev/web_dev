@@ -18,5 +18,7 @@ gem 'middleman-livereload'
 gem 'middleman-rsync'
 gem 'middleman-blog', '~> 4.0'
 gem 'middleman-syntax'
+gem "middleman-sprockets"
+
 
 # see middleman blog example site: https://github.com/rossta/rossta.github.com

@@ -1,21 +1,88 @@
-%nav#topNav.navbar.fixed-top.navbar-toggleable-sm
+%nav.navbar.navbar-inverse.navbar-custom-dark{:role => "navigation"}
   .container
-    %button.navbar-toggler.hidden-md-up.float-right{"data-target" => "#collapsingNavbar", "data-toggle" => "collapse", :type => "button"}
-      ☰
-    %a.navbar-brand.page-scroll{:href => "/#first"} TMS
-    #collapsingNavbar.collapse.navbar-collapse
-      %ul.navbar-nav
-        %li.nav-item
-          %a.nav-link.page-scroll{:href => "/#one"} Features
-        %li.nav-item
-          %a.nav-link.page-scroll{:href => "/#two"} Solutions
-        %li.nav-item
-          %a.nav-link.page-scroll{:href => "/#three"} Pricing
-        %li.nav-item
-          %a.nav-link.page-scroll{:href => "/#four"} More
-        %li.nav-item
-          %a.nav-link.page-scroll{:href => "/blog"} Blog
-      %ul.nav.navbar-nav.ml-auto
-        %li.nav-item
-          %a.btn.btn-outline-success{ role: 'button', href: '/tenants/register' } Try NOW!
-          -# %a.nav-link.page-scroll{"data-toggle" => "modal", :href => "#aboutModal", :title => "A free Bootstrap theme"} About
+    .navbar-header
+      %button.navbar-toggle.collapsed{"aria-expanded" => "false", "data-target" => "#bs-navbar-collapse-1", "data-toggle" => "collapse", :type => "button"}
+        %span.sr-only Toggle navigation
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      %a.navbar-brand{:href => "/"}
+        %i.material-icons> developer_mode
+        TMS
+    #bs-navbar-collapse-1.collapse.navbar-collapse.navbar-top-collapse
+      %ul.nav.navbar-nav.navbar-left
+        %li.dropdown
+          %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+            %i.material-icons home
+            Features
+            %span.caret
+          %ul.dropdown-menu
+            %li
+              %a{:href => "/features/overview"}
+                %i.material-icons grade
+                Overview
+            %li
+              %a{:href => "/features/scheduling"}
+                %i.material-icons switch_camera
+                Calendar &amp; Scheduling
+            %li
+              %a{:href => "/features/billing"}
+                %i.material-icons switch_video
+                Billing &amp; Payroll
+        %li.dropdown
+          %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+            %i.material-icons pages
+            Solutions
+            %span.caret
+          %ul.dropdown-menu
+            %li
+              %a{:href => "/solutions/training-center"}
+                %i.material-icons monetization_on
+                Training Center
+            %li
+              %a{:href => "/solutions/tutoring-center"}
+                %i.material-icons done_all
+                Tutoring Center
+            %li
+              %a{:href => "/solutions/language-school"}
+                %i.material-icons new_releases
+                Language Schools
+            %li
+              %a{:href => "/solutions/music-school"}
+                %i.material-icons face
+                Music Schools
+        %li
+          %a{:href => "/testimonials"}
+            %i.material-icons dashboard
+            Testimonials
+        %li
+          %a{:href => "/pricing"}
+            %i.material-icons dashboard
+            Pricing
+        %li.dropdown
+          %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+            %i.material-icons receipt
+            Support
+            %span.caret
+          %ul.dropdown-menu
+            %li
+              %a{:href => "/support/tutorials"}
+                %i.material-icons record_voice_over
+                Tutorials
+            %li
+              %a{:href => "/support/knowledge-base"}
+                %i.material-icons question_answer
+                Knowledge Base
+            %li
+              %a{:href => "/contact"}
+                %i.material-icons aspect_ratio
+                Contact
+        %li
+          %a{:href => "#"}
+            %i.material-icons dashboard
+            Login
+      %ul.nav.navbar-nav.navbar-right
+        %li.navbar-btn-container
+          %a.btn.btn-primary.navbar-btn{:href => "/tenants/register", :type => "button"}
+            %i.material-icons supervisor_account
+            Try it for FREE

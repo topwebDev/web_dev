@@ -51,30 +51,19 @@ ignore 'stylesheets/style'
 
 # Build-specific configuration
 configure :build do
-  # For example, change the Compass output style for deployment
-  # activate :minify_css
-
-  # Minify Javascript on build
-  # activate :minify_javascript
-
-  # Enable cache buster
-  activate :asset_hash
-
-  # Use relative URLs
-  activate :relative_assets
-
+  activate :minify_css  # For example, change the Compass output style for deployment
+  activate :minify_javascript  # Minify Javascript on build
+  activate :asset_hash  # Enable cache buster
+  activate :relative_assets  # Use relative URLs
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
-
   activate :gzip
 end
 
 activate :blog do |blog|
   # This will add a prefix to all links, template references and source paths
   # blog.prefix = "blog"
-
   blog.layout = 'blog'
-
   # Permalink format
   blog.permalink = 'blog/{year}/{month}/{day}/{title}.html'
   # Matcher for blog source files
@@ -96,11 +85,15 @@ activate :syntax
 # Activate Directory Indexes
 activate :directory_indexes
 
-activate :external_pipeline,
-         name: :webpack,
-         command: build? ? '$(npm bin)/webpack --bail -p' : '$(npm bin)/webpack --watch -d --progress --color',
-         source: '.tmp/dist',
-         latency: 1
+# Sprocket Asset Compilation
+activate :sprockets
+after_configuration do
+  @bower_config = JSON.parse(IO.read("#{root}/.bowerrc"))
+  Dir.glob(File.join("#{root}", @bower_config["directory"], "*", "fonts")) do |f|
+    sprockets.append_path f
+  end
+  sprockets.append_path File.join "#{root}", @bower_config["directory"]
+end
 
 activate :rsync do |rsync|
   rsync.production_server = "eduapp"
