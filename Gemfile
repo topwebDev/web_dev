@@ -22,3 +22,7 @@ gem "middleman-sprockets"
 
 
 # see middleman blog example site: https://github.com/rossta/rossta.github.com
+
+group :development do
+  gem 'byebug'
+end

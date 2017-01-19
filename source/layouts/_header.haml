@@ -1,88 +1,89 @@
-%nav.navbar.navbar-inverse.navbar-custom-dark{:role => "navigation"}
+%nav.navbar.navbar-inverse.navbar-custom-dark{role: "navigation"}
   .container
     .navbar-header
-      %button.navbar-toggle.collapsed{"aria-expanded" => "false", "data-target" => "#bs-navbar-collapse-1", "data-toggle" => "collapse", :type => "button"}
+      %button.navbar-toggle.collapsed{"aria-expanded" => "false", "data-target" => "#bs-navbar-collapse-1", "data-toggle" => "collapse", type: "button"}
         %span.sr-only Toggle navigation
         %span.icon-bar
         %span.icon-bar
         %span.icon-bar
-      %a.navbar-brand{:href => "/"}
+      %a.navbar-brand{href: "/"}
         %i.material-icons> developer_mode
-        TMS
+        #{data.settings.brand}
     #bs-navbar-collapse-1.collapse.navbar-collapse.navbar-top-collapse
       %ul.nav.navbar-nav.navbar-left
         %li.dropdown
-          %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+          %a.dropdown-toggle{"data-toggle" => "dropdown", href: "#"}
             %i.material-icons home
             Features
             %span.caret
           %ul.dropdown-menu
             %li
-              %a{:href => "/features/overview"}
+              %a{href: "/features/overview"}
                 %i.material-icons grade
                 Overview
-            %li
-              %a{:href => "/features/scheduling"}
-                %i.material-icons switch_camera
-                Calendar &amp; Scheduling
-            %li
-              %a{:href => "/features/billing"}
-                %i.material-icons switch_video
-                Billing &amp; Payroll
+            - data.features.each do |feature|
+              %li
+                %a{href: "/features/#{feature[:name]}"}
+                  %i.material-icons switch_camera
+                  #{feature[:menu]}
         %li.dropdown
-          %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+          %a.dropdown-toggle{"data-toggle" => "dropdown", href: "#"}
             %i.material-icons pages
             Solutions
             %span.caret
           %ul.dropdown-menu
             %li
-              %a{:href => "/solutions/training-center"}
+              %a{href: "/solutions/training-center"}
                 %i.material-icons monetization_on
                 Training Center
             %li
-              %a{:href => "/solutions/tutoring-center"}
+              %a{href: "/solutions/tutoring-center"}
                 %i.material-icons done_all
                 Tutoring Center
             %li
-              %a{:href => "/solutions/language-school"}
+              %a{href: "/solutions/language-school"}
                 %i.material-icons new_releases
                 Language Schools
             %li
-              %a{:href => "/solutions/music-school"}
+              %a{href: "/solutions/music-school"}
                 %i.material-icons face
                 Music Schools
         %li
-          %a{:href => "/testimonials"}
+          %a{href: "/testimonials"}
             %i.material-icons dashboard
             Testimonials
         %li
-          %a{:href => "/pricing"}
+          %a{href: "/pricing"}
             %i.material-icons dashboard
             Pricing
         %li.dropdown
-          %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+          %a.dropdown-toggle{"data-toggle" => "dropdown", href: "#"}
             %i.material-icons receipt
             Support
             %span.caret
           %ul.dropdown-menu
             %li
-              %a{:href => "/support/tutorials"}
+              %a{href: "/support/tutorials"}
                 %i.material-icons record_voice_over
                 Tutorials
             %li
-              %a{:href => "/support/knowledge-base"}
+              %a{href: "/support/knowledge-base"}
                 %i.material-icons question_answer
                 Knowledge Base
             %li
-              %a{:href => "/contact"}
+              %a{href: "/contact"}
                 %i.material-icons aspect_ratio
                 Contact
         %li
-          %a.no-barba{:href => "#"}
+          %a{href: "/blog"}
+            %i.material-icons dashboard
+            Blog
+      %ul.nav.navbar-nav.navbar-right
+        %li
+          = link_to '#', class: 'no-barba' do
             %i.material-icons dashboard
             Login
-      %ul.nav.navbar-nav.navbar-right
         %li.navbar-btn-container
-          %a.no-barba.btn.btn-primary.navbar-btn{:href => "/tenants/register", :type => "button"}
+          = link_to '/tenants/register', class: 'btn btn-primary navbar-btn no-barba', type: 'button' do
             %i.material-icons supervisor_account
             Try it for FREE
