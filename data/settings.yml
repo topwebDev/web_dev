@@ -15,4 +15,4 @@ social_links:
     url: 'https://linkedin.com'
   - name: 'Facebook'
     url: 'https://facebook.com'
-# google_analytics_account: 'XX-12345678-9'
+google_analytics_account: 'UA-74127394-4'

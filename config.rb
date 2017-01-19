@@ -15,7 +15,7 @@ page '/*.txt', layout: false
 # Generate feature tour pages
 # features = parse_yaml('data/features.yml')
 data.features.each do |feature|
-  proxy "/features/#{feature['name']}/index.html", "/features/template.html", locals: { f: feature }
+  proxy "/features/#{feature['name']}/index.html", "/features/template.html", locals: { f: feature }, ignore: true
 end
 
 # General configuration
@@ -50,6 +50,9 @@ ignore 'stylesheets/style'
 
 # Build-specific configuration
 configure :build do
+  activate :robots,
+           rules: [{ user_agent: '*', disallow: %w(/) }],
+           sitemap: "http://bunnywave.com/sitemap.xml"
   activate :minify_css  # For example, change the Compass output style for deployment
   activate :minify_javascript  # Minify Javascript on build
   activate :asset_hash  # Enable cache buster

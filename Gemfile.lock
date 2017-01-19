@@ -83,6 +83,8 @@ GEM
       em-websocket (~> 0.5.1)
       middleman-core (>= 3.3)
       rack-livereload (~> 0.3.15)
+    middleman-robots (1.2.3)
+      middleman (>= 4.0)
     middleman-rsync (0.1.0)
       middleman-core (~> 4.0)
     middleman-sprockets (4.1.0)
@@ -133,6 +135,7 @@ DEPENDENCIES
   middleman (>= 4.0.0)
   middleman-blog (~> 4.0)
   middleman-livereload
+  middleman-robots
   middleman-rsync
   middleman-sprockets
   middleman-syntax

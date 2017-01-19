@@ -17,6 +17,7 @@ gem 'middleman', '>= 4.0.0'
 gem 'middleman-livereload'
 gem 'middleman-rsync'
 gem 'middleman-blog', '~> 4.0'
+gem 'middleman-robots'
 gem 'middleman-syntax'
 gem "middleman-sprockets"
 
