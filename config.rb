@@ -3,6 +3,9 @@ Time.zone = 'UTC'
 # Templates
 
 set :haml, { ugly: true, format: :html5 }
+set :js_dir, 'assets/javascripts'
+set :css_dir, 'assets/stylesheets'
+set :images_dir, 'assets/images'
 
 page '/feed.xml', layout: false
 page '/sitemap.xml', layout: false

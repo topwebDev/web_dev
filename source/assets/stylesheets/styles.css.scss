@@ -38,9 +38,9 @@
 
 
 // Vendor
-@import "ekko-lightbox/dist/ekko-lightbox.css"; // bower_component
+@import "vendor/ekko-lightbox"; // copy from bower_component and rename from css to scss
+@import "vendor/aos"; // copy from bower_component
 @import "slick-carousel/slick/slick";
-// @import "aos/src/sass/aos";
 
 // @import "vendor/lightbox/theme";
 // @import "vendor/slick/theme"; // customize
