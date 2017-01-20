@@ -1,0 +1,9 @@
+assets/desktop.png filter=lfs diff=lfs merge=lfs -text
+assets/ipad.png filter=lfs diff=lfs merge=lfs -text
+assets/ipad.psd filter=lfs diff=lfs merge=lfs -text
+assets/iphone.png filter=lfs diff=lfs merge=lfs -text
+assets/macbook.psd filter=lfs diff=lfs merge=lfs -text
+assets/mobile.psd filter=lfs diff=lfs merge=lfs -text
+assets/tour.psd filter=lfs diff=lfs merge=lfs -text
+assets/Web-Showcase-Project-Presentation-PIXEDEN.zip filter=lfs diff=lfs merge=lfs -text
+assets/Web-Showcase-Project-Presentation-PIXEDEN.zip:Zone.Identifier filter=lfs diff=lfs merge=lfs -text
