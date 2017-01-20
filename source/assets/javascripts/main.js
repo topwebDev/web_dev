@@ -1,15 +1,15 @@
 if (typeof jQuery === "undefined") {
-  throw new Error("StartKit requires jQuery");
+  throw new Error("MyApp requires jQuery");
 }
 
-$.StartKit = {}
+$.MyApp = {}
 
 $(function() {
-  $.StartKit.activateTooltips = function() {
+  $.MyApp.activateTooltips = function() {
     $('[data-toggle="tooltip"]').tooltip();
   }
 
-  $.StartKit.activateSliders = function() {
+  $.MyApp.activateSliders = function() {
     if($("#logo-slider").length) {
       $('#logo-slider').slick({
         dots: true,
@@ -97,7 +97,7 @@ $(function() {
     }
   }
 
-  $.StartKit.activateCounter = function() {
+  $.MyApp.activateCounter = function() {
     if($(".animated-counters").length) {
       var employee = new CountUp("employee-count", 0, 25);
       employee.start();
@@ -113,7 +113,7 @@ $(function() {
     }
   }
 
-  $.StartKit.activateGallery = function() {
+  $.MyApp.activateGallery = function() {
     var $container = $("#gallery-container");
 
     $container
@@ -123,7 +123,7 @@ $(function() {
     });
   }
 
-  $.StartKit.activateFiltering = function() {
+  $.MyApp.activateFiltering = function() {
     if($("#filterable-list").length) {
       var $container = $('#filterable-list');
       $container.isotope({
@@ -153,20 +153,20 @@ $(function() {
     }
   }
 
-  $.StartKit.activateScrollAnimations = function() {
+  $.MyApp.activateScrollAnimations = function() {
     AOS.init();
   }
 
   // INIT
-  $.StartKit.init = function() {
-    $.StartKit.activateGallery();
-    $.StartKit.activateFiltering();
-    $.StartKit.activateTooltips();
-    $.StartKit.activateSliders();
-    $.StartKit.activateCounter();
-    $.StartKit.activateScrollAnimations();
+  $.MyApp.init = function() {
+    $.MyApp.activateGallery();
+    $.MyApp.activateFiltering();
+    $.MyApp.activateTooltips();
+    $.MyApp.activateSliders();
+    $.MyApp.activateCounter();
+    $.MyApp.activateScrollAnimations();
   }
 
 
-  $.StartKit.init();
+  $.MyApp.init();
 })

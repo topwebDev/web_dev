@@ -45,7 +45,7 @@ $(function() {
     Barba.Prefetch.init();
     Barba.Pjax.start();
     Barba.Dispatcher.on("transitionCompleted", function() {
-      $.StartKit.init();
+      $.MyApp.init();
     })
   } else {
     console.log("Please serve this page from a web server to see AJAX page transitions")
