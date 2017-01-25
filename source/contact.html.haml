@@ -12,17 +12,17 @@
               %p
                 %strong Call us
                 %br/
-                Talk to our customer service representative at
-                %strong 456-212-1122
+                Talk to our product specialist at
+                %strong #{data.settings.phone_number}
               %hr/
               %p
                 %strong Email us
                 %br/
                 Talk to our developers by sending an email to
-                %strong devs@mysite.com
+                %strong #{data.settings.email}
         .widget.widget-red
           %h5
             Browse our knowledge base
           %p
             We encourage you to browse our knowledge base for answers to common problems
-          %a.btn.btn-bordered.btn-white{:href => "support.html"} Visit Knowledge Base →
+          %a.btn.btn-bordered.btn-white{:href => "/support.html"} Visit Knowledge Base →
