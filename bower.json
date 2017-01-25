@@ -13,7 +13,7 @@
     "jquery": "~2.0",
     "bootstrap-sass": "^3.3.7",
     "font-awesome": "~4.6.3",
-    "slick-carousel": "^1.6.0",
+    "slick-carousel": "1.6.*",
     "aos": "^2.1.1",
     "countUp.js": "^1.8.1",
     "ekko-lightbox": "^4.0.0",
