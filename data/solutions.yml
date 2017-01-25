@@ -1,7 +1,7 @@
-- name: calendar
-  menu: Calendar & Scheduling
-  title: Complex Scheduling Simplified
-  desc: Coordinating schedules with multiple teachers, students and locations can be a challenge. LearnHop simplifies scheduling and ensures that everyone is on the same page.
+- name: training-centers
+  menu: Training Centers
+  title: Training Center Automation
+  desc: some desc
   tour:
     - name: Multiple Calendar Views & Filters
       desc: Finding open spaces is quick & easy with over six different calendar views including month, week agenda, daily agenda, teachers, and locations. Plus calendar filters for students,teachers and locations.
@@ -24,9 +24,9 @@
     - name: Schedule Confirmations
       desc: Reduce last minute cancellations and maintain open communication with your customers with schedule confirmation emails. The fully customizable email template gives your clients a quick outlook of upcoming sessions.
       img: calendar7.png
-- name: communication
-  menu: Communication
-  title: Enhance & Automate Communication.
+- name: tutoring-centers
+  menu: Tutoring Centers
+  title: Tutoring Centers
   desc: Communication is an important part of any teaching organization. LearnHop will help your business communicate and provide teachers, students and parents with the information that they need.
   tour:
     - name: Personal, Online User Accounts
@@ -44,9 +44,9 @@
     - name: Send Individual & Group Emails
       desc: Send emails to one or more of your teachers, staff, students and parents. Save unlimited email templates for frequently used communications. Use merge tags to personalize messages for each recipient.
       img: communication5.png
-- name: billing
-  menu: Billing & Payroll
-  title: Less Accounting. More Teaching.
+- name: language-schools
+  menu: Language Schools
+  title: Language Schools
   desc: LearnHop offers several tools to free up hours that you would normally spend on billing clients and collecting payments.
   tour:
     - name: Efficient, Rule-Based Billing
@@ -55,21 +55,14 @@
     - name: Easy, Editable Invoices
       desc: Reduce the time you spend generating invoices with LearnHop' flexible invoicing system that generates editable invoices, supports charges & packages and can even pull lessons right from your calendar. Generate invoices for a single client or generate several at once.
       img: billing2.png
-    - name: Professional, Custom Invoices
-      desc: Extend your company's brand with LearnHop' professional, customizable invoices. Add your company logo, contact details, instructions and more. Invoices can be emailed, printed and saved in PDF format.
-      img: billing3.png
-    - name: Highlighted Invoice Changes
-      desc: Flagged invoices let administrators or staff easily spot when changes to lessons on the calendar affect invoice totals. When viewing a flagged invoice, the changes to the affected lessons and the invoice total are clearly highlighted and the recommended action is indicated.
-      img: billing4.png
-    - name: Accept Credit Card Payments
-      desc: Offer your clients more convenience by accepting online credit card payments. LearnHop is integrated with Stripe so you can begin accepting credit cards in minutes without a merchant account. Clients can pay quickly directly from their online invoices.
-      img: billing5.png
-    - name: Automated Timesheets & Teacher Payments
-      desc: There's no need to collect time sheets from your teachers because teacher hours are pulled right from the lessons on the calendar. Calculating teacher payments is as easy as selecting the payment time period, checking the lessons to include, and submitting the payment form.
-      img: billing6.png
-    - name: Invoice Autopilot
-      desc: LearnHop' Invoice Autopilot add-on allows you to automatically generate invoices according to a customizable schedule. Flexible schedule options & customizable invoice settings help you reduce the amount of time you spend on invoicing.
-      img: billing7.png
-    - name: Custom Invoice Email Templates
-      desc: Personalize invoice notifications by customizing email templates for different scenarios such as sending a customer their first invoice, invoice reminders, final notices and more!
-      img: billing8.png
+- name: music-schools
+  menu: Music Schools
+  title: Music Schools
+  desc: LearnHop offers several tools to free up hours that you would normally spend on billing clients and collecting payments.
+  tour:
+    - name: Efficient, Rule-Based Billing
+      desc: LearnHop supports a wide range of methods for charging students including per hour by student or by service type, flat-fee, and prepaid hours package. Student discounts and premiums are also supported. Lesson costs are set automatically based on the student's settings -- saving time and reducing clerical errors.
+      img: billing1.png
+    - name: Easy, Editable Invoices
+      desc: Reduce the time you spend generating invoices with LearnHop' flexible invoicing system that generates editable invoices, supports charges & packages and can even pull lessons right from your calendar. Generate invoices for a single client or generate several at once.
+      img: billing2.png

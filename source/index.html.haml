@@ -18,29 +18,7 @@ title: Training Center Management System
               Take a tour →
         .col-md-6.hidden-sm.hidden-xs{"data-aos" => "fade-up-left"}
           %img.img-responsive.main-img{alt: "", src: "/assets/images/myapp/macbook-calendar-view.png"}/
-  %section#horizontal-features
-    .container
-      .row
-        .col-md-4.feature-item
-          .image
-            %img{alt: "", src: "/assets/images/smallicons-svg/www.svg"}/
-          .text
-            %h4 Built with Bootstrap 3
-            %p.lead Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, nam, accusamus
-        .col-md-4.feature-item
-          .image
-            %img{alt: "", src: "/assets/images/smallicons-svg/eye.svg"}/
-          .text
-            %h4 Easily Custmizable
-            %p.lead Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, nam, accusamus
-        .col-md-4.feature-item
-          .image
-            %img{alt: "", src: "/assets/images/smallicons-svg/store.svg"}/
-          .text
-            %h4 20+ Page Options
-            %p.lead Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, nam, accusamus
-      / /.row
-    / /.container
+  = partial "/partials/horizontal-features.html"
   %section#features
     .container
       .row
@@ -91,11 +69,11 @@ title: Training Center Management System
       .row
         .col-md-8.col-md-offset-2.text.text-center
           %h2
-            Ready to create your website?
+            Ready to improve your business?
           %p.lead
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, reiciendis vel quisquam consectetur fuga qui aperiam iste.
+            You focus on Training. We automate your business and increase course bookings.
           %a.btn.btn-lg.btn-primary.btn-round{"data-target" => "#purchaseModal", "data-toggle" => "modal", href: "#"}
-            Purchase Now
+            Try it FREE now
             \→
   %section#testimonial-stats{"data-aos" => "fade-up"}
     .container
@@ -143,35 +121,10 @@ title: Training Center Management System
     .container
       .row
         .col-md-12
-          .logos
-            .row
-              .col-md-12
-                .additional-header
-                  %h3 Companies that use us
-            #logo-slider
-              .item
-                %img{src: "/assets/images/company-logos-svg/bosch.svg"}/
-              .item
-                %img{src: "/assets/images/company-logos-svg/cisco.svg"}/
-              .item
-                %img{src: "/assets/images/company-logos-svg/codeacademy.svg"}/
-              .item
-                %img{src: "/assets/images/company-logos-svg/facebook.svg"}/
-              .item
-                %img{src: "/assets/images/company-logos-svg/instagram.svg"}/
-              .item
-                %img{src: "/assets/images/company-logos-svg/linkedin.svg"}/
-              .item
-                %img{src: "/assets/images/company-logos-svg/motorola.svg"}/
-              .item
-                %img{src: "/assets/images/company-logos-svg/nokia.svg"}/
-              .item
-                %img{src: "/assets/images/company-logos-svg/shopify.svg"}/
-              .item
-                %img{src: "/assets/images/company-logos-svg/soundcloud.svg"}/
+          = partial "/partials/logo-slider.html"
           .row
             .col-md-12.text-center
-              %a.btn.btn-bordered.btn-lg.btn-round.btn-primary{href: "#"}
+              %a.btn.btn-bordered.btn-lg.btn-round.btn-primary{href: "/testimonials"}
                 Read more testimonials →
   %section#pricing-table{"data-aos" => "fade-up"}
     .container
@@ -264,46 +217,14 @@ title: Training Center Management System
         .col-md-12.text-center
           .heading
             %h2
-              Everything you need to launch your startup
+              Everything you need to automate your business
               %br/
               %small
-                Get yourself ahead with this beautiful template.
-      .row
-        .col-md-4.feature-item
-          %i.fa.fa-picture-o.feature-icon
-          .text
-            %h5 Beauifully Designed Pages
-            %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, reprehenderit, doloribus corporis necessitatibus ut sint voluptates id excepturi laborum.
-        .col-md-4.feature-item
-          %i.fa.fa-eye.feature-icon
-          .text
-            %h5 Easily Customizable
-            %p Voluptatibus impedit obcaecati incidunt aliquid molestias voluptate fugiat excepturi accusantium quibusdam dolore beatae quidem vero voluptates a quasi.
-        .col-md-4.feature-item
-          %i.fa.fa-mobile-phone.feature-icon
-          .text
-            %h5 Works well on mobile & tablets
-            %p Necessitatibus, nemo aliquid. Nihil, ullam consequatur ipsa placeat.Explicabo perspiciatis voluptates quam quia aliquid at rem nulla omnis sit.
-      .row
-        .col-md-4.feature-item
-          %i.fa.fa-signal.feature-icon
-          .text
-            %h5 Analytics
-            %p Laboriosam quod aperiam blanditiis ratione odit officiis deserunt quas mollitia totam similique!
-        .col-md-4.feature-item
-          %i.fa.fa-clock-o.feature-icon
-          .text
-            %h5 Blog and Coming Soon pages included
-            %p Rem, dolorem, magni aspernatur delectus nihil reiciendis temporibus ipsum rerum iusto placeat vero.
-        .col-md-4.feature-item
-          %i.fa.fa-flask.feature-icon
-          .text
-            %h5 Bright, cheerful colors
-            %p
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, earum, dolorum iste ut sed dolor!
+                Equip and modernize your business to accelerate to the next level.
+      = partial "/partials/boxed-features-list.html"
       .row
         .col-md-4.col-md-offset-4
           .text-center
             %a.btn.btn-lg.btn-block.btn-primary.btn-round.btn-main-cta{href: "#"}
               %i.material-icons add_shopping_cart
-              Purchase Now
+              Try it for free NOW

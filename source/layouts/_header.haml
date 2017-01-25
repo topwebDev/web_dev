@@ -33,21 +33,11 @@
             %span.caret
           %ul.dropdown-menu
             %li
-              %a{href: "/solutions/training-center"}
-                %i.material-icons monetization_on
-                Training Center
-            %li
-              %a{href: "/solutions/tutoring-center"}
-                %i.material-icons done_all
-                Tutoring Center
-            %li
-              %a{href: "/solutions/language-school"}
-                %i.material-icons new_releases
-                Language Schools
-            %li
-              %a{href: "/solutions/music-school"}
-                %i.material-icons face
-                Music Schools
+              - data.solutions.each do |solution|
+                %li
+                  %a{href: "/solutions/#{solution[:name]}"}
+                    %i.material-icons switch_camera
+                    #{solution[:menu]}
         %li
           %a{href: "/testimonials"}
             %i.material-icons dashboard

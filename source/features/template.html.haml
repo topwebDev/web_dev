@@ -7,3 +7,11 @@
           %br
             %small
               = f['desc']
+    = f.tour.each do |t|
+      .row
+        .col-md-12
+          %h2
+            = t['name']
+          %p
+            = t['desc']
+          %img{ src: "#{t['img']}" }

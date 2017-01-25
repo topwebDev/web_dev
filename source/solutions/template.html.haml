@@ -4,10 +4,10 @@
       .row
         .col-md-12
           %h2
-            Music Schools Business Automation
+            = s['title']
             %br/
             %small
-              #{data.settings.brand} made your business simple and easy.
+              = s['desc']
   %section.tour
     .container
       .row
@@ -159,51 +159,6 @@
                         Bootstrap 3 Ready
                       %p
                         I just closed my eyes and in a nanosecond I cured myself from this ridiculous model of disease, addiction and obsession. It's just the work of sissies. How complicated can it be? What they're not ready for, is guys like you and I, Nails, and all the other gnarly gnarlingtons in my life, that we are high priests. Vatican assassin warlocks. Boom. Print that, people.
-              / tab3
-            / tab content
-  %section.bottom-cta
-    .container
-      .row
-        .col-md-8
-          .additional-header
-            %h3 Still not convinced?
-          %p Lid est laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats vitaes nemo minima rerums unsers sadips amets. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-          %blockquote
-            %p
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, officiis, ea, quidem, perferendis debitis quo neque dicta nisi quod ad laborum vel minima culpa maiores fugiat blanditiis atque harum magni!
-        .col-md-4
-          .notepaper
-            .note
-              .text
-                %h3.text-center Here's a sticky note to change your mind
-                %p.lead
-                  %i.fa.fa-check
-                  Multiple pages
-                  %br/
-                  %i.fa.fa-check
-                  Easy Customization
-                  %br/
-                  %i.fa.fa-check
-                  Responsive Design
-                  %br/
-                  %i.fa.fa-check
-                  Bootstrap 3
-                  %br/
-                .text-center
-                  %a.btn.btn-lg.btn-danger{:href => "#"} Purchase →
+  = partial "../partials/call_for_action.html"
   = partial "../partials/horizontal-features.html"
-  %section.full-width-service
-    .container
-      .row
-        .col-md-8.col-md-offset-2.text.text-center
-          %h1
-            Maybe you'd like to show your services on a nice large background
-          %p.lead
-            Beer Ipsum is perfect if you're searching for something a little more refreshing
-          %p
-            Secondary fermentation degrees plato units of bitterness, cask conditioned ale ibu real ale pint glass craft beer. krausen goblet grainy ibu brewhouse lagering finishing hops. Trappist, black malt chocolate malt balthazar gravity dextrin saccharification trappist final gravity
-          .text-center.button-wrapper
-            %a.btn.btn-primary.btn-lg.btn-round.btn-main-cta{:href => "#"}
-              Purchase Now →
-            %span.or or
-            %a.btn.btn-link{:href => "features.html"} See features page
+  = partial "../partials/full-width-service.html"

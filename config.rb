@@ -17,9 +17,13 @@ page '/*.json', layout: false
 page '/*.txt', layout: false
 
 # Generate feature tour pages
-# features = parse_yaml('data/features.yml')
 data.features.each do |feature|
   proxy "/features/#{feature['name']}/index.html", "/features/template.html", locals: { f: feature }, ignore: true
+end
+
+# Generate solution pages
+data.solutions.each do |solution|
+  proxy "/solutions/#{solution['name']}/index.html", "/solutions/template.html", locals: { s: solution }, ignore: true
 end
 
 # General configuration

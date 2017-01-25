@@ -7,52 +7,25 @@
             %h3
               %span Solutions
             %ul.unstyled
-              %li
-                %a{href: "/solutions/training-center"}
-                  %i.material-icons home
-                  Training Centers
-              %li
-                %a{href: "/solutions/tutoring-center"}
-                  %i.material-icons home
-                  Tutoring Centers
-              %li
-                %a{href: "/solutions/language-school"}
-                  %i.material-icons supervisor_account
-                  Language School
-              %li
-                %a{href: "/solutions/music-school"}
-                  %i.material-icons done_all
-                  Music School
+              - data.solutions.each do |solution|
+                %li
+                  %a{href: "/solutions/#{solution[:name]}"}
+                    %i.material-icons done_all
+                    #{solution[:menu]}
           .col-sm-4.col-xs-6.footer-menu
             %h3
               %span Features
             %ul.unstyled
-              %li
-                %a{href: "portfolio-1-col.html"}
-                  %i.material-icons brightness_4
-                  Online Enrollment
-                  %small.label.label-success New!
-              %li
-                %a{href: "portfolio-2-col.html"}
-                  %i.material-icons brightness_5
-                  Course Management
-              %li
-                %a{href: "portfolio-3-col.html"}
-                  %i.material-icons brightness_6
-                  Calendar &amp; Scheduling
-              %li
-                %a{href: "gallery-4-col.html"}
-                  %i.material-icons compare
-                  CRM
-              %li
-                %a{href: "support.html"}
-                  %i.material-icons record_voice_over
-                  Integration
+              - data.solutions.each do |solution|
+                %li
+                  %a{href: "/solutions/#{solution[:name]}"}
+                    %i.material-icons compare
+                    #{solution[:menu]}
+                    %small.label.label-success New!
               %li
                 %a{href: "faq.html"}
                   %i.material-icons question_answer
                   More
-          / footer menu
           .col-sm-4.hidden-xs.footer-menu
             %h3
               %span Social
