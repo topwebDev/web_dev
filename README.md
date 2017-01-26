@@ -1,15 +1,17 @@
 # Company Website for LearnHop.com
 
-## template source:
+## Installation
+
+### template source:
 
 * https://www.authenticpixels.com/product/startkit-responsive-startup-business-template
 
-## Technology Used
+### Technology Used
 
 * middleman static site generator
 * node.js + ruby
 
-## Setup
+### Setup
 
 Pre-requisite:
 
@@ -28,7 +30,7 @@ Install dependencies
 bower install && bundle install
 ```
 
-## Preview
+### Preview
 
 ```
 $ middleman server
@@ -36,10 +38,16 @@ $ middleman server
 
 Visit http://localhost:4567
 
-## Deploy to production server
+### Deploy to production server
 
 (Configured in config.rb file)
 
 ```
 $ middleman rsync production
 ```
+
+## Content Editing Tips
+
+* See all data/ files for quick addition of repetitive text.
+* Blog Image Size: 800x350
+* Feature Image Size: 540x309 (1996x1144)
