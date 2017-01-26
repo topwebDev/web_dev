@@ -16,12 +16,12 @@
             %h3
               %span Features
             %ul.unstyled
-              - data.solutions.each do |solution|
+              - data.features.each do |feature|
                 %li
-                  %a{href: "/solutions/#{solution[:name]}"}
+                  %a{href: "/solutions/#{feature[:name]}"}
                     %i.material-icons compare
-                    #{solution[:menu]}
-                    %small.label.label-success New!
+                    #{feature[:menu]}
+                    -# %small.label.label-success New!
               %li
                 %a{href: "faq.html"}
                   %i.material-icons question_answer
