@@ -22,7 +22,7 @@
               %i.fa.fa-calendar
               Annual
         #pricing-table
-          {% include "partials/pricing-table.html" %}
+          = partial "partials/pricing-table.html"
         .row
           .col-md-12
             .text-center
@@ -172,36 +172,20 @@
               %h3 Frequently Asked Questions
         .row.freq-questions
           .col-lg-6.col-md-6
-            .question
-              %h5
-                How much will I be charged?
-              %p
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, cum, quo, ut fugit corporis quidem alias quas qui dignissimos earum modi quaerat quibusdam nam incidunt maiores obcaecati vero error deserunt?
-            .question
-              %h5
-                Can I change my plan after some time?
-              %p
-                Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center.
-            .question
-              %h5
-                When will my card be charged?
-              %p
-                It suddenly struck me that that tiny pea, pretty and blue, was the Earth. I put up my thumb and shut one eye, and my thumb blotted out the planet Earth. I didn't feel like a giant. I felt very, very small.
+            - data.pricingfaq.each_with_index do |faq, i|
+              - if i < data.pricingfaq.count / 2
+                .question
+                  %h5
+                    = faq['question']
+                  %p
+                    = faq['answer']
           .col-lg-6.col-md-6
-            .question
-              %h5
-                Will you save my card details?
-              %p
-                Spaceflights cannot be stopped. This is not the work of any one man or even a group of men. It is a historical process which mankind is carrying out in accordance with the natural laws of human development.
-            .question
-              %h5
-                Can I cancel my subscription?
-              %p
-                When I orbited the Earth in a spaceship, I saw for the first time how beautiful our planet is. Mankind, let us preserve and increase this beauty, and not destroy it!
-            .question
-              %h5
-                Can I pay with Paypal?
-              %p
-                The path of a cosmonaut is not an easy, triumphant march to glory. You have to get to know the meaning not just of joy but also of grief, before being allowed in the spacecraft cabin.
+            - data.pricingfaq.each_with_index do |faq, i|
+              - if i >= data.pricingfaq.count / 2
+                .question
+                  %h5
+                    = faq['question']
+                  %p
+                    = faq['answer']
       = partial "partials/testimonials.html"
   = partial "partials/horizontal-features.html"
