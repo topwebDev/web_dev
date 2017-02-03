@@ -12,9 +12,7 @@
     = feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed"
     %meta{content: "IE=edge", "http-equiv" => "X-UA-Compatible"}/
     %meta{content: "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0", name: "viewport"}/
-    %meta{content: "yes", name: "apple-mobile-web-app-capable"}/
-    %meta{content: "black-translucent", name: "apple-mobile-web-app-status-bar-style"}/
-    = partial "layouts/favicon.haml"
+    = partial "layouts/favicon"
     = partial "layouts/seo.haml"
     %title= format_title
     %meta{content: page_description, name: "description"}/
