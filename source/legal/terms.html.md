@@ -1,7 +1,7 @@
-# Terms and Conditions of Use
-
-Updated January 1, 2017
-
+---
+title: Terms and Conditions of Use
+subtitle: Updated January 1, 2017
+---
 Please read and abide by our Terms and Conditions of Use which explains our mutual obligations with our customers.
 
 The Terms set forth are binding immediately upon use and access to the LearnHop application suite.

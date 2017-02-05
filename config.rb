@@ -16,6 +16,8 @@ page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
 
+page '/legal/*', layout: 'article'
+
 # Generate feature tour pages
 data.features.each do |feature|
   proxy "/features/#{feature['name']}/index.html", "/features/template.html", locals: { f: feature }, ignore: true

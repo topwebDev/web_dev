@@ -53,6 +53,9 @@
       .row
         .col-md-12
           #{data.settings.brand}. Copyright © 2016-#{Time.now.year}. All Rights Reserved
+          = link_to 'Terms of Use', '/legal/terms'
+          &nbsp;|&nbsp;
+          = link_to 'Privacy Policy', '/legal/privacy'
           .pull-right.hidden-xs
             = link_to data.settings.brand, data.settings.site_url
 #purchaseModal.modal.fade.zoom-out
