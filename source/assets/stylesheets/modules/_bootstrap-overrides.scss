@@ -43,14 +43,20 @@ $navbar-default-brand-color:       darken($brand-primary, 10%);
 $navbar-default-brand-hover-color: darken($brand-primary, 20%);
 
 // Navbar dark
-$navbar-inverse-color:             $md-light-blue-200;
-$navbar-inverse-bg:                $md-blue-grey-800;
-$navbar-inverse-link-active-bg:    $md-blue-grey-900;
-$navbar-inverse-link-color:        $md-blue-grey-200;
-$navbar-inverse-link-hover-color:  lighten($md-blue-grey-200, 10%);
+// $navbar-inverse-color:             $md-light-blue-200;
+// $navbar-inverse-bg:                $md-blue-grey-800;
+// $navbar-inverse-link-active-bg:    $md-blue-grey-900;
+// $navbar-inverse-link-color:        $md-blue-grey-200;
+// $navbar-inverse-link-hover-color:  lighten($md-blue-grey-200, 10%);
+// $navbar-inverse-brand-color:       $md-white;
+// $navbar-inverse-brand-hover-color: $md-white;
+$navbar-inverse-color:             $heath;
+$navbar-inverse-bg:                $viking;
+$navbar-inverse-link-active-bg:    $heath;
+$navbar-inverse-link-color:        $white;
+$navbar-inverse-link-hover-color:  lighten($heath, 10%);
 $navbar-inverse-brand-color:       $md-white;
 $navbar-inverse-brand-hover-color: $md-white;
-
 
 $border-radius-base:        1px;
 
