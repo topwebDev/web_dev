@@ -52,6 +52,7 @@ set :markdown,
     layout_engine: :slim,
     tables: true,
     autolink: true,
+    auto_ids: false,
     smartypants: true,
     input: 'GFM'
 
