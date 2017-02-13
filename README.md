@@ -38,6 +38,14 @@ $ middleman server
 
 Visit http://localhost:4567
 
+### Deploy to staging server
+
+Staging: http://dev.learnhop.com
+
+```
+$ curl -X POST -d '{}' https://api.netlify.com/build_hooks/58a12d0bc4d9cc1b57b8b723
+```
+
 ### Deploy to production server
 
 (Configured in config.rb file)
