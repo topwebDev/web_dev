@@ -11,14 +11,31 @@
 * middleman static site generator
 * node.js + ruby
 
-### Setup
+### Setup (For Mac OSX)
 
 Pre-requisite:
 
-* Install bower (npm -g bower)
+* Install node.js and npm
+
+Go to https://nodejs.org/en/download/ and download node.js Mac Installer and follow screen instruction to install it.
+
+after it's done, please check the version of node.js
+
+```
+$ node -v
+```
+
+* Install bower
+
+```
+$ npm -g bower
+```
+
 * Install RVM and Bundler
 
-Check out code:
+See https://www.moncefbelyamani.com/how-to-install-xcode-homebrew-git-rvm-ruby-on-mac/
+
+* Check out code:
 
 ```
 git clone ...
