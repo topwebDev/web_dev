@@ -9,20 +9,139 @@
             %small
               Simple and honest pricing. No contracts, cancel anytime.
   .container.page-content
-    .row
-      .col-md-12
-        .text-right
-          .btn-group.js-toggle-pricing{"data-toggle" => "buttons"}
-            %label.btn.btn-default.active
-              %input#option1{:name => "options", :type => "radio", :value => "monthly"}/
-              %i.fa.fa-clock
-              Monthly
-            %label.btn.btn-default
-              %input#option2{:name => "options", :type => "radio", :value => "annual"}/
-              %i.fa.fa-calendar
-              Annual
-        #pricing-table
-          = partial "partials/pricing-table.html"
+  .row
+    .col-md-12
+      .text-right
+        .btn-group.js-toggle-pricing{"data-toggle" => "buttons"}
+          %a.btn.btn-default{"data-toggle" => "pill", :href => "#monthly_pricing"}
+            %input#option1{:name => "options", :type => "radio", :value => "monthly"}/
+            %i.fa.fa-clock
+            Monthly
+          %a.btn.btn-default{"data-toggle" => "pill", :href => "#annual_pricing"}
+            %input#option2{:name => "options", :type => "radio", :value => "annual"}/
+            %i.fa.fa-calendar
+            Annual
+      #pricing-table
+        .tab-content
+          #monthly_pricing.row.p-tables.tab-pane.fade.in.active
+            .col-md-3{"data-aos" => "fade-up-right"}
+              .panel.panel-default.text-center
+                .panel-heading
+                  %p.lead.text-muted.plan-title Basic
+                  %h3.panel-title.price
+                    $9
+                    %span.price-cents 99
+                    %span.price-month mo.
+                %ul.list-group
+                  %li.list-group-item 5 Projects
+                  %li.list-group-item 5 GB of Storage
+                  %li.list-group-item Up to 100 Users
+                  %li.list-group-item 10 GB Bandwidth
+                  %li.list-group-item Security Suite
+                  %li.list-group-item.button-wrapper
+                    %a.btn.btn-default Sign Up Now!
+            .col-md-3.popular-plan{"data-aos" => "fade-up"}
+              .panel.panel-default.text-center
+                .popular-label
+                  Popular!
+                .panel-heading
+                  %p.lead.text-muted.plan-title Plus
+                  %h3.panel-title.price
+                    $19
+                    %span.price-cents 99
+                    %span.price-month mo.
+                %ul.list-group
+                  %li.list-group-item 10 Projects
+                  %li.list-group-item 10 GB of Storage
+                  %li.list-group-item Up to 250 Users
+                  %li.list-group-item 25 GB Bandwidth
+                  %li.list-group-item Security Suite
+                  %li.list-group-item.button-wrapper
+                    %a.btn.btn-primary Sign Up Now!
+            .col-md-3{"data-aos" => "fade-up-left"}
+              .panel.panel-default.text-center
+                .panel-heading
+                  %p.lead.text-muted.plan-title Premium
+                  %h3.panel-title.price
+                    $29
+                    %span.price-cents 99
+                    %span.price-month mo.
+                %ul.list-group
+                  %li.list-group-item Unlimited
+                  %li.list-group-item 50 GB of Storage
+                  %li.list-group-item Up to 1000 Users
+                  %li.list-group-item 100 GB Bandwidth
+                  %li.list-group-item Security Suite
+                  %li.list-group-item.button-wrapper
+                    %a.btn.btn-default Sign Up Now!
+            .col-md-3{"data-aos" => "fade-up-left"}
+              .panel.panel-default.text-center
+                .panel-heading
+                  %p.lead.text-muted.plan-title Ultimate
+                  %h3.panel-title.price
+                    $49
+                    %span.price-cents 99
+                    %span.price-month mo.
+                %ul.list-group
+                  %li.list-group-item Unlimited
+                  %li.list-group-item 150 GB of Storage
+                  %li.list-group-item Unlimited
+                  %li.list-group-item 500 GB Bandwidth
+                  %li.list-group-item Security Suite
+                  %li.list-group-item.button-wrapper
+                    %a.btn.btn-default Sign Up Now!
+          #annual_pricing.row.p-tables.tab-pane.fade
+            .col-md-3{"data-aos" => "fade-up-right"}
+              .panel.panel-default.text-center
+                .panel-heading
+                  %p.lead.text-muted.plan-title 5 Days
+                  %h3.panel-title.price
+                    $1.5
+                    %span.price-cents 99
+                    %span.price-month mo.
+                %ul.list-group
+                  %li.list-group-item 1 Projects
+                  %li.list-group-item 5 GB of Storage
+                  %li.list-group-item Up to 100 Users
+                  %li.list-group-item 10 GB Bandwidth
+                  %li.list-group-item Security Suite
+                  %li.list-group-item.button-wrapper
+                    %a.btn.btn-default Sign Up Now!
+            .col-md-3.popular-plan{"data-aos" => "fade-up"}
+              .panel.panel-default.text-center
+                .popular-label
+                  Popular!
+                .panel-heading
+                  %p.lead.text-muted.plan-title 10 Days
+                  %h3.panel-title.price
+                    $3
+                    %span.price-cents 99
+                    %span.price-month mo.
+                %ul.list-group
+                  %li.list-group-item 2 Projects
+                  %li.list-group-item 10 GB of Storage
+                  %li.list-group-item Up to 250 Users
+                  %li.list-group-item 25 GB Bandwidth
+                  %li.list-group-item Security Suite
+                  %li.list-group-item.button-wrapper
+                    %a.btn.btn-primary Sign Up Now!
+            .col-md-3.popular-plan{"data-aos" => "fade-up"}
+              .panel.panel-default.text-center
+                .panel-heading
+                  %p.lead.text-muted.plan-title 45 Days
+                  %h3.panel-title.price
+                    $24
+                    %span.price-cents 99
+                    %span.price-month mo.
+                %ul.list-group
+                  %li.list-group-item 15 Projects
+                  %li.list-group-item 10 GB of Storage
+                  %li.list-group-item Up to 250 Users
+                  %li.list-group-item 25 GB Bandwidth
+                  %li.list-group-item Security Suite
+                  %li.list-group-item.button-wrapper
+                    %a.btn.btn-primary Sign Up Now!
+
         .row
           .col-md-12
             .text-center
@@ -189,3 +308,4 @@
                     = faq['answer']
       = partial "partials/testimonials.html"
   = partial "partials/horizontal-features.html"
+  %a.scrollToTop{:href => "#"}  &uarr;Top

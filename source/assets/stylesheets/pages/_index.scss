@@ -87,6 +87,12 @@
         padding: 18px 48px;
         font-weight: 500;
         box-shadow: 0 2px 4px rgba($black, 0.48);
+        background-color: #ff9900;
+        border-color: #ff9900;
+      }
+      .btn-main-cta:hover{
+        background-color: #400d12;
+        border-color: #400d12;
       }
 
       .or {
@@ -110,7 +116,8 @@
         text-decoration: none;
 
         &:hover {
-          border-bottom-color: $md-grey-200;
+          color: red;
+          border-bottom-color: red;
         }
       }
     }
